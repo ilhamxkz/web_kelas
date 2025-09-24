@@ -5,6 +5,7 @@ import Navbar from './components/navbar.vue';
 import Body from './components/header.vue';
 import Bayangan from './components/bayangan.vue';
 import About from './components/about.vue';
+import Murid from './components/murid.vue';
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import About from './components/about.vue';
       <Navbar />
       <Body />
       <About />
+      <Murid />
       <Footer />
     </Bayangan>
   </Backgroundfixed>
