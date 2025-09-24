@@ -44,6 +44,7 @@
   .bg-wrap {
     position: relative;
     min-height: 300vh;
+    width: 100%;
     /* jika mau area lebih panjang, min-height bisa diubah */
   }
   
@@ -57,9 +58,8 @@
   /* konten yang di atas background */
   .bg-content {
     position: relative;
-    z-index: 1;
     /* beri padding supaya konten terlihat */
-    padding: 40px 20px;
+
   }
   </style>
   

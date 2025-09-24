@@ -49,14 +49,16 @@ const year = computed(() => {
   background: #fafafa;
   color: #374151;
   font-size: 14px;
+  border-radius: 6px;
+  box-shadow: 0 9px 23px rgba(0, 0, 0, 0.12);
 }
 .container {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+
 }
 .left {
   display: flex;
