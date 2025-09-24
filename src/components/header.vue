@@ -11,8 +11,9 @@ import Fotokita from '../assets/usXIrpl1.png';
 
 <style scoped>
 .hero-wrapper {
-  width: 100vw;
-  height: 100vh;      /* penuh layar */
+  width: 100%; 
+  box-sizing: border-box;
+  height: 100%;      /* penuh layar */
   overflow: hidden;   /* potongan yang melampaui disembunyikan */
   display: block;
 }
