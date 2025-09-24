@@ -23,21 +23,22 @@
     overlay: { type: String, default: '' } // contoh: 'rgba(0,0,0,0.3)'
   })
   
-  const fixedStyle = computed(() => ({
-    backgroundImage: `url('${props.src}')`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: props.position,
-    top: '0',
-    left: '0',
-    width: '100%',
-    height: '100%',
-    zIndex: '-1',
-    position: 'fixed',
-    transform: 'translateZ(0)', /* membantu rendering */
-    // overlay dengan gradient jika diberi props.overlay
-    ...(props.overlay ? { backgroundColor: props.overlay, backgroundBlendMode: 'overlay' } : {})
-  }))
+  // computed style: (ubah width/height -> posisi full)
+const fixedStyle = computed(() => ({
+  backgroundImage: `url('${props.src}')`,
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: props.position,
+  top: '0',
+  left: '0',
+  right: '0',
+  bottom: '0',
+  zIndex: '0',            // ubah -1 jadi 0
+  position: 'fixed',
+  transform: 'translateZ(0)',
+  ...(props.overlay ? { backgroundColor: props.overlay, backgroundBlendMode: 'overlay' } : {})
+}));
+
   </script>
   
   <style scoped>

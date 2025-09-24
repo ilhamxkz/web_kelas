@@ -46,6 +46,7 @@ const year = computed(() => {
 .footer {
   border-top: 1px solid #e5e7eb;
   padding: 18px 16px;
+  margin: 12px;
   background: #fafafa;
   color: #374151;
   font-size: 14px;
